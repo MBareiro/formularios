@@ -57,9 +57,9 @@ include('conexionDb.php')
 
 			<div class="form-group">
 				<label for="genero">Genero:</label>
-				<input type="radio" name="genero" value="mujer">Mujer
-				<input type="radio" name="genero" value="hombre">Hombre
-				<input type="radio" name="genero" value="otro">Otro
+				<input type="radio" name="genero" value="mujer" >Mujer
+				<input type="radio" name="genero" value="hombre" >Hombre
+				<input type="radio" name="genero" value="otro" >Otro
 			</div>
 
 			<div class="form-group">

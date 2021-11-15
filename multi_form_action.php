@@ -10,7 +10,6 @@ include_once("conexionDb.php");
 
 		function validar($dato)
 		{
-			echo $dato;
 			$result = "";
 			if (isset($dato) and !empty($dato)) {
 				$result = $dato;
@@ -18,8 +17,6 @@ include_once("conexionDb.php");
 				if (is_Numeric($dato)) {
 					$result = 0;
 				} else if (is_String($dato)) {
-					$result = "";
-				}else{
 					$result = "";
 				}
 			}
@@ -33,9 +30,13 @@ include_once("conexionDb.php");
 			$apellido = validar($_POST["apellido"]);
 			$fechanacimiento = validar($_POST["fechanacimiento"]);
 			$dni = validar($_POST["dni"]);
-			$genero = validar($_POST["genero"]);
-			echo "aaaaaaaaaaaa" . $_POST["genero"];
 
+			if(isset($_POST["genero"])){
+				$genero = $_POST["genero"];
+			}else{
+				$genero = "";
+			}
+			
 			$discapacidades = validar($_POST["discapacidades"]);
 			$ecivil = validar($_POST["ecivil"]);
 			$correo =  validar($_POST["email"]);
@@ -55,15 +56,44 @@ include_once("conexionDb.php");
 			} else {
 				$pdf = NULL;
 			}
-			$licencia = validar($_POST["licencia"]);
-			$auto = validar($_POST["auto"]);
+
+			if(isset($_POST["licencia"])){
+				$licencia = $_POST["licencia"];
+			}else{
+				$licencia = 0;
+			}
+
+
+			if(isset($_POST["auto"])){
+				$auto = $_POST["auto"];
+			}else{
+				$auto = 0;
+			}
+
 			$situacionlab = validar($_POST["slaboral"]);
 			$area = validar($_POST["area"]);
 			$salariomin	= validar($_POST["sma"]);
-			$dispoviajar = validar($_POST["dv"]);
-			$dispomuda = validar($_POST["dcr"]);
+
+			if(isset($_POST["dv"])){
+				$dispoviajar = $_POST["dv"];
+			}else{
+				$dispoviajar = 0;
+			}
+
+			if(isset($_POST["dcr"])){
+				$dispomuda = $_POST["dcr"];
+			}else{
+				$dispomuda = 0;
+			}
+
 			$progs = validar($_POST["progs"]);
-			$niveledu = validar($_POST["neducativo"]);
+
+			if(isset($_POST["neducativo"])){
+				$niveledu = $_POST["neducativo"];
+			}else{
+				$niveledu = "";
+			}
+
 			$puestodeseado = validar($_POST["pdeseado"]);
 
 			//no recibe foto con metodo $_FILES
@@ -79,9 +109,7 @@ include_once("conexionDb.php");
 				*/
 			} else {
 				$foto = NULL;
-			}
-
-			
+			}		
 
 			/*INSERT INTO `usuario`(`iduser`, `usuario`, `apellido`, `fechanacimiento`, `dni`, `genero`, `discapacidades`, `ecivil`, `correo`, `contacto`, `codpostal`, `domicilio`, `localidad`, `departamento`, `provincia`, `idpais`, `idlog`, `lastlogin`, `cursos`, `pdf`, `licencia`, `auto`, `situacionlab`, `area`, `salariomin`, `dispoviajar`, `dispomuda`, `progs`, `foto`, `niveledu`, `puestodeseado`)*/
 
