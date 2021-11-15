@@ -18,7 +18,9 @@ include_once("conexionDb.php");
 				if (is_Numeric($dato)) {
 					$result = 0;
 				} else if (is_String($dato)) {
-					$result = "qweqwe";
+					$result = "";
+				}else{
+					$result = "";
 				}
 			}
 			return $result;
@@ -32,7 +34,7 @@ include_once("conexionDb.php");
 			$fechanacimiento = validar($_POST["fechanacimiento"]);
 			$dni = validar($_POST["dni"]);
 			$genero = validar($_POST["genero"]);
-			echo "aaaaaaaaaaaa" . $genero;
+			echo "aaaaaaaaaaaa" . $_POST["genero"];
 
 			$discapacidades = validar($_POST["discapacidades"]);
 			$ecivil = validar($_POST["ecivil"]);
