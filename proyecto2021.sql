@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 15-11-2021 a las 05:27:40
+-- Tiempo de generación: 16-11-2021 a las 14:57:45
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 7.3.28
 
@@ -175,11 +175,6 @@ CREATE TABLE `idioxuser` (
 INSERT INTO `idioxuser` (`iduser`, `idi`) VALUES
 (1, 1),
 (1, 2),
-(2, 3),
-(8, 1),
-(8, 2),
-(8, 6),
-(8, 3),
 (1, 3),
 (1, 4),
 (1, 5),
@@ -348,12 +343,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`iduser`, `usuario`, `apellido`, `fechanacimiento`, `dni`, `genero`, `discapacidades`, `ecivil`, `correo`, `contacto`, `codpostal`, `domicilio`, `localidad`, `departamento`, `provincia`, `idpais`, `idlog`, `lastlogin`, `cursos`, `pdf`, `licencia`, `auto`, `situacionlab`, `area`, `salariomin`, `dispoviajar`, `dispomuda`, `progs`, `foto`, `niveledu`, `puestodeseado`) VALUES
-(153, 'martin', 'bar', '1111-11-11', 32423, 'hombre', '', 'Soltero', 'martinchoo_13@hotmail.com', '345345', 0, '', 1, 1, 1, 1, NULL, NULL, '', '', 0, 0, 0, '', 0, 0, 0, '', '', '', ''),
-(152, 'martin', 'bar', '1111-11-11', 32423, 'hombre', '', 'Soltero', 'martinchoo_13@hotmail.com', '345345', 0, '', 1, 1, 1, 1, NULL, NULL, '', '', 0, 0, 0, '', 0, 0, 0, '', '', '', ''),
-(151, 'martin', 'bar', '1111-11-11', 32423, 'hombre', '', 'Soltero', 'martinchoo_13@hotmail.com', '345345', 4454, '', 1, 1, 1, 1, NULL, NULL, '', '', 0, 0, 0, '', 0, 0, 0, '', '', '', ''),
-(150, 'martin', 'asdasd', '1111-11-11', 2323, 'hombre', '', 'Soltero', 'martinchoo_13@hotmail.com', '323', 2323, 'asdfasd', 1, 1, 1, 1, NULL, NULL, 'reparacin', '', 1, 0, 0, 'tec', 1000, 2, 2, 'aaaaaaaaaaaaaa', '', 'Universitario completo', 'feren'),
-(149, 'martin', 'asdasd', '1111-11-11', 2323, 'hombre', '', 'Soltero', 'martinchoo_13@hotmail.com', '323', 2323, 'asdfasd', 1, 1, 1, 1, NULL, NULL, '', '', 1, 0, 0, 'tec', 1000, 2, 2, '', '', '', 'feren'),
-(148, 'martin', 'asdasd', '1111-11-11', 2323, 'hombre', '', 'Soltero', 'martinchoo_13@hotmail.com', '323', 2323, 'asdfasd', 1, 1, 1, 1, NULL, NULL, '', '', 1, 0, 0, '', 0, 0, 0, '', '', '', '');
+(204, 'martin', 'sdsd', '1111-11-23', 2323, '', '', '', 'martinchoo_13@hotmail.com', '', 0, '', 1, 1, 1, 1, NULL, NULL, 'cxdsgsdg', '', 0, 0, 1, 'asdasd', 1000, 2, 2, 'sdgsdg', '', 'Universitario completo', 'asdasdas');
 
 --
 -- Índices para tablas volcadas
@@ -515,7 +505,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `iduser` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
+  MODIFY `iduser` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=205;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

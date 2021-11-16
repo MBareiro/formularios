@@ -20,7 +20,8 @@ $(document).ready(function () {
       fetchExps();
 
       // Resetea el formulario despues de presionar el boton guardar
-      $("#form-exp").trigger("reset");
+      //$("#form-exp").trigger("reset");
+      document.getElementById('form-exp').reset();
     });
     e.preventDefault();
   });
@@ -84,7 +85,4 @@ $(document).ready(function () {
     })
 
   });
-
-  
-
 });
