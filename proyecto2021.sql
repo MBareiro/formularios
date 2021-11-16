@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 16-11-2021 a las 14:57:45
+-- Tiempo de generación: 16-11-2021 a las 16:46:00
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 7.3.28
 
@@ -130,9 +130,7 @@ INSERT INTO `experiencia` (`idexp`, `iduser`, `idempresa`, `empresa`, `puesto`, 
 (48, 2, 1, 'sdfsd', 'asdasd', '1111-11-11', '1111-11-11', '43243'),
 (41, 2, 1, 'qwe', 'qweqw', '1111-11-11', '1111-11-11', '1'),
 (46, 2, 1, 'sdfsd', 'asdasd', '1111-11-11', '1111-11-11', '1'),
-(47, 2, 1, 'sdfsd', 'asdasd', '1111-11-11', '1111-11-11', '1'),
-(58, 1, 1, 'sdfsd', 'asdasd', '1111-11-11', '1111-11-11', '1'),
-(57, 1, 1, 'sdfsd', 'asd', '1111-11-22', '1111-11-11', '1');
+(47, 2, 1, 'sdfsd', 'asdasd', '1111-11-11', '1111-11-11', '1');
 
 -- --------------------------------------------------------
 
@@ -343,6 +341,8 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`iduser`, `usuario`, `apellido`, `fechanacimiento`, `dni`, `genero`, `discapacidades`, `ecivil`, `correo`, `contacto`, `codpostal`, `domicilio`, `localidad`, `departamento`, `provincia`, `idpais`, `idlog`, `lastlogin`, `cursos`, `pdf`, `licencia`, `auto`, `situacionlab`, `area`, `salariomin`, `dispoviajar`, `dispomuda`, `progs`, `foto`, `niveledu`, `puestodeseado`) VALUES
+(206, 'braulio', 'santo pomelo', '0111-03-22', 777, '', '', '', 'martin@hotmail.com', '', 0, '', 1, 1, 1, 1, NULL, NULL, '', '', 0, 0, 0, '', 0, 0, 0, '', '', '', ''),
+(205, 'martin', 'bare', '1111-11-11', 2323, '', '', '', 'martinchoo_13@hotmail.com', '', 0, '', 1, 1, 1, 1, NULL, NULL, '', '', 0, 0, 0, '', 0, 0, 0, '', '', '', ''),
 (204, 'martin', 'sdsd', '1111-11-23', 2323, '', '', '', 'martinchoo_13@hotmail.com', '', 0, '', 1, 1, 1, 1, NULL, NULL, 'cxdsgsdg', '', 0, 0, 1, 'asdasd', 1000, 2, 2, 'sdgsdg', '', 'Universitario completo', 'asdasdas');
 
 --
@@ -463,7 +463,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `experiencia`
 --
 ALTER TABLE `experiencia`
-  MODIFY `idexp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `idexp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT de la tabla `idiomas`
@@ -505,7 +505,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `iduser` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=205;
+  MODIFY `iduser` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
